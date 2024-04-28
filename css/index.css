@@ -4,9 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 45vh;
     background-color: #f9f3ff; /* Светлый пастельный цвет фона */
     margin: 0;
+    text-align: center;
 }
 
 /* Стили контейнера для отсчета времени */
@@ -92,7 +93,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 65vh;
+    height: 70vh;
     background-color: #f9f3ff; /* Светлый пастельный цвет фона */
     margin: 0;
 }
@@ -104,6 +105,7 @@ h1 {
     padding: 20px;
     border-radius: 15px; /* Закругленные углы */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
 }
 
 /* Стили для вопросов */
@@ -162,5 +164,9 @@ label {
     #submit-button {
         font-size: 14px;
         padding: 8px 16px;
+    }
+    
+    #survey-container {
+        width: 80%;
     }
 }
