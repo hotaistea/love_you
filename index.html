@@ -9,62 +9,37 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
 </head>
 <body>
-    
-    <div class="wrapper">
-        <main class="main">
-            <div id="countdown-container">
-                <div id="countdown">
-                    <div class="time-unit" id="days">
-                        <span class="value">0</span>
-                        <span class="label">дней</span>
-                    </div>
-                    <div class="time-unit" id="hours">
-                        <span class="value">0</span>
-                        <span class="label">часов</span>
-                    </div>
-                    <div class="time-unit" id="minutes">
-                        <span class="value">0</span>
-                        <span class="label">минут</span>
-                    </div>
-                    <div class="time-unit" id="seconds">
-                        <span class="value">0</span>
-                        <span class="label">секунд</span>
-                    </div>
-                </div>
-            </div>
-        </main>
-        <section class="form">
-            <div id="survey-container">
-                <h1>Как у тебя настроение?</h1>
-                <form id="survey-form" action="https://formspree.io/f/xrgnrlwq" method="POST">
-                    <!-- Вопрос о настроении -->
-                    <div class="question">
-                        <label for="mood-select">Выбери настроение:</label>
-                        <select id="mood-select" class="input" name="настроение">
-                            <option value="счастливое">Счастливое</option>
-                            <option value="грустное">Грустное</option>
-                            <option value="раздраженное">Раздраженное</option>
-                            <option value="спокойное">Спокойное</option>
-                            <option value="взволнованное">Взволнованное</option>
-                            <option value="усталое">Усталое</option>
-                        </select>
-                    </div>
-        
-                    <!-- Вопрос о чувствах -->
-                    <div class="question">
-                        <label for="feeling-text">Расскажи о своих чувствах:</label>
-                        <textarea name="что чуствует" id="feeling-text" class="input" placeholder="Например, что тебя волнует или радует"></textarea>
-                    </div>
-        
-                    <!-- Кнопка отправки -->
-                    <button type="submit" id="submit-button">Отправить</button>
-                </form>
-                <!-- Раздел для отображения результата опроса -->
-                <div id="result"></div>
-            </div>
-        </section>
+    <div class="main">
+        <div class="container">
+            <h1>I'll be waiting for you</h1>
+        </div>
     </div>
 
+    <section class="form">
+        <div id="survey-container">
+            <h1>Как будешь готова ответить, <br>или просто если гордость <br>не позволяет</h1>
+            <form id="survey-form" action="https://formspree.io/f/xrgnrlwq" method="POST">
+                <div class="question">
+                    <label for="mood-select">Ты хочешь возобновить отношения?:</label>
+                    <select id="mood-select" class="input" name="хочет?">
+                        <option value="да">да</option>
+                        <option value="нет">нет</option>
+                    </select>
+                </div>
+    
+                <!-- Вопрос о чувствах -->
+                <div class="question">
+                    <label for="feeling-text">Расскажи о своих чувствах:</label>
+                    <textarea name="что чуствует" id="feeling-text" class="input" placeholder="..."></textarea>
+                </div>
+    
+                <!-- Кнопка отправки -->
+                <button type="submit" id="submit-button">Отправить</button>
+            </form>
+            <!-- Раздел для отображения результата опроса -->
+            <div id="result"></div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="./js/index.js"></script>
 </body>
