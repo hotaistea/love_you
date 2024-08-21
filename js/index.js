@@ -1,5 +1,5 @@
 // Укажите дату начала отсчёта
-const startDate = new Date("May 04, 2024 00:00:00");
+const startDate = new Date("May 03, 2024 00:00:00");
 
 function updateCountdown() {
     // Текущая дата и время
