@@ -170,3 +170,21 @@ label {
         width: 80%;
     }
 }
+.galery {
+    background-color: #f9f3ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.swiper {
+    width: 350px;
+
+}
+.swiper img {
+    width: 100%;
+}
+.swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
